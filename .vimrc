@@ -10,7 +10,7 @@ let mapleader=","
 set langmenu=none
 
 " use Englisth for anything in vim-editor
-silent exec 'language en_US.utf8'
+" silent exec 'language en_US.utf8'
 
 " set defualt encoding to utf-8
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
@@ -25,7 +25,7 @@ filetype off " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-let vimrc_plugins_path = '.vimrc_plugins_liy'
+let vimrc_plugins_path = '$HOME/.vimliy/.vimrc_plugins_liy'
 " load .vimrc.plugins
 if filereadable(expand(vimrc_plugins_path))
     exec 'source ' . fnameescape(vimrc_plugins_path)
